@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bilnow Super Writer</title>
+    <link rel="stylesheet" href="sw-style.css">
+</head>
+<body>
+    <div class="sw-wrap">
+        <header class="sw-header">
+            <h1 class="sw-title">Bilnow Super Writer</h1>
+            <p class="sw-subtitle">Analyze content attributes with ease</p>
+        </header>
+        <div class="sw-card">
+            <div class="sw-form-container">
+                <div class="sw-input-group">
+                    <label for="user_text">Enter Text</label>
+                    <textarea name="user_text" id="user_text" placeholder="Paste your text here..."></textarea>
+                </div>
+                <div class="sw-input-group">
+                    <label for="user_url">Enter Website URL</label>
+                    <input type="url" name="user_url" id="user_url" placeholder="https://example.com">
+                </div>
+                <div class="sw-actions">
+                    <button type="button" id="submit_text" class="sw-button sw-button-primary">Analyze Text</button>
+                    <button type="button" id="submit_url" class="sw-button sw-button-secondary">Analyze URL</button>
+                </div>
+            </div>
+            <div class="sw-response" id="super-writer-response">
+                <div class="sw-tabs">
+                    <ul class="sw-tab-nav">
+                        <li class="sw-tab-item" data-tab="entities">Entities</li>
+                        <li class="sw-tab-item" data-tab="key-phrases">Key Phrases</li>
+                        <li class="sw-tab-item" data-tab="language">Language</li>
+                        <li class="sw-tab-item" data-tab="pii">PII</li>
+                        <li class="sw-tab-item" data-tab="sentiment">Sentiment</li>
+                    </ul>
+                    <div class="sw-tab-content">
+                        <div class="sw-tab-panel" id="entities-panel">
+                            <div class="sw-entity-visualization" id="entity-visualization"></div>
+                        </div>
+                        <div class="sw-tab-panel" id="key-phrases-panel">
+                            <div id="key-phrases-content"></div>
+                        </div>
+                        <div class="sw-tab-panel" id="language-panel">
+                            <div id="language-content"></div>
+                        </div>
+                        <div class="sw-tab-panel" id="pii-panel">
+                            <div id="pii-content"></div>
+                        </div>
+                        <div class="sw-tab-panel" id="sentiment-panel">
+                            <div id="sentiment-content"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="sw-script.js">
+       
+    </script>
+</body>
+</html>

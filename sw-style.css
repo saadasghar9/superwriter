@@ -1,0 +1,225 @@
+.sw-wrap {
+    max-width: 900px;
+    margin: 20px auto;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+
+.sw-header {
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 20px 0;
+    background: linear-gradient(135deg, #1DBFCC 0%, #17A2B8 100%);
+    color: #fff;
+    border-radius: 8px 8px 0 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.sw-title {
+    font-size: 36px;
+    margin: 0;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.sw-subtitle {
+    font-size: 16px;
+    margin: 5px 0 0;
+    opacity: 0.9;
+    font-weight: 400;
+}
+
+.sw-card {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+}
+
+.sw-form-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.sw-input-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.sw-input-group label {
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+.sw-input-group textarea,
+.sw-input-group input[type="url"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    transition: border-color 0.3s ease;
+}
+
+.sw-input-group textarea:focus,
+.sw-input-group input[type="url"]:focus {
+    border-color: #1DBFCC;
+    outline: none;
+}
+
+.sw-input-group textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+.sw-actions {
+    display: flex;
+    gap: 15px;
+}
+
+.sw-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.sw-button-primary {
+    background: #1DBFCC;
+    color: #fff;
+}
+
+.sw-button-primary:hover {
+    background: #17A2B8;
+}
+
+.sw-button-secondary {
+    background: #6c757d;
+    color: #fff;
+}
+
+.sw-button-secondary:hover {
+    background: #5a6268;
+}
+
+.sw-response {
+    margin-top: 20px;
+    padding: 15px;
+    border: 1px solid #eee;
+    border-radius: 4px;
+    background: #f9f9f9;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+.sw-response.success {
+    border-color: #28a745;
+    background: #e9f7ef;
+    color: #155724;
+}
+
+.sw-response.error {
+    border-color: #dc3545;
+    background: #f8d7da;
+    color: #721c24;
+}
+
+.sw-response.loading {
+    text-align: center;
+    color: #666;
+}
+
+.sw-response .sentiment-high-positive {
+    color: #28a745; /* Green */
+    font-weight: bold;
+}
+
+.sw-response .sentiment-high-negative {
+    color: #dc3545; /* Red */
+    font-weight: bold;
+}
+
+.sw-response .sentiment-very-subjective {
+    font-style: italic;
+}
+
+.sw-tabs {
+    margin-top: 20px;
+}
+
+.sw-tab-nav {
+    display: flex;
+    border-bottom: 2px solid #ddd;
+    margin-bottom: 15px;
+}
+
+.sw-tab-item {
+    padding: 10px 20px;
+    cursor: pointer;
+    color: #666;
+    font-weight: 600;
+    border: 1px solid #ddd;
+    border-bottom: none;
+    border-radius: 4px 4px 0 0;
+    background: #f9f9f9;
+    margin-right: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.sw-tab-item.active {
+    background: #fff;
+    color: #1DBFCC;
+    border-color: #1DBFCC;
+    border-bottom: 2px solid #fff;
+}
+
+.sw-tab-item:hover {
+    background: #f0f0f0;
+    color: #1DBFCC;
+}
+
+.sw-tab-content {
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 0 4px 4px 4px;
+    background: #fff;
+}
+
+.sw-tab-panel {
+    display: none;
+}
+
+.sw-tab-panel.active {
+    display: block;
+}
+
+.sw-analysis {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.sw-entity-visualization {
+    margin-top: 15px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 4px;
+    background: #fff;
+}
+
+/* Ensure displacy styles are preserved or adjusted */
+.sw-entity-visualization span {
+    display: inline;
+    padding: 0.2em 0.4em;
+    margin: 0 0.1em;
+    line-height: 1;
+    border-radius: 0.35em;
+}
+
+.sw-entity-visualization .entity {
+    background: rgba(0, 0, 0, 0.1);
+}
