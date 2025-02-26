@@ -47,7 +47,7 @@ jQuery(document).ready(function($) {
 
         showResponse('Processing...', 'loading');
         $.ajax({
-            url: 'http://127.0.0.1:8000/api/receive-text/', // Adjust to your Django domain (e.g., PythonAnywhere)
+            url: 'https://web-production-162b.up.railway.app/api/receive-text/', // Adjust to your Django domain (e.g., PythonAnywhere)
             method: 'POST',
             contentType: 'application/json',
             data: JSON.stringify({ text: text }),
@@ -118,7 +118,7 @@ jQuery(document).ready(function($) {
 
         showResponse('Processing...', 'loading');
         $.ajax({
-            url: 'http://127.0.0.1:8000/api/fetch-text/', // Adjust to your Django domain
+            url: 'https://web-production-162b.up.railway.app/api/fetch-text/', // Adjust to your Django domain
             method: 'POST',
             contentType: 'application/json',
             data: JSON.stringify({ url: url }),
@@ -132,7 +132,7 @@ jQuery(document).ready(function($) {
 
                     // Use POST to fetch visualization
                     $.ajax({
-                        url: 'http://127.0.0.1:8000/api/visualize/', // Adjust to your Django domain
+                        url: 'https://web-production-162b.up.railway.app/api/visualize/', // Adjust to your Django domain
                         method: 'POST',
                         contentType: 'application/json',
                         data: JSON.stringify({ text: data.extracted_text }),
